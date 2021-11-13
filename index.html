@@ -11,23 +11,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
     <!--Título-->
-    <title>Modelo</title>
+    <title>Projeção de financiamento</title>
 </head>
 
 <body>
     <!--Título-->
     <header>
-        <h1 class="text-center">Título</h1>
+        <h1 class="text-center">Financiamento</h1>
     </header>
     
     <!--Formulário-->
     <section>
         <form>
             <div class="collumn justify-content-center align-items-center" id="campos">
-                <!--Campo 1-->
+                <!--Renda-->
                 <div class="col-auto">
-                    <label class="form-label">Campo</label>
-                    <input type="text" id="campo" name="campo" class="form-control" required>
+                    <label class="form-label">Renda mensal</label>
+                    <input type="number" id="renda" name="renda" class="form-control" step="0.01" placeholder="4000,00" required>
+                </div>
+                <!--Financiamento-->
+                <div class="col-auto">
+                    <label class="form-label">Valor financiado</label>
+                    <input type="number" id="financiamento" name="financiamento" class="form-control" step="0.01" placeholder="30000,00" required>
+                </div>
+                <!--Renda-->
+                <div class="col-auto">
+                    <label class="form-label">Valor da entrada</label>
+                    <input type="number" id="entrada" name="entrada" class="form-control" step="0.01" placeholder="50000,00" required>
                 </div>
             </div>
             <!--Botão-->
@@ -36,9 +46,13 @@
             </div>
         </form>
     </section>
+    
+    <p id="resultado"></p>
 
     <!--Footer-->
-    <footer></footer>
+    <footer>
+        <span>Amanda Moura © 2021</span>
+    </footer>
 
     <!--Interação-->
     <script src="js/script.js"></script>
