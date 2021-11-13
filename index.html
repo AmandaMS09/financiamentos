@@ -39,10 +39,20 @@
                     <label class="form-label">Valor da entrada</label>
                     <input type="number" id="entrada" name="entrada" class="form-control" step="0.01" placeholder="50000,00" required>
                 </div>
+                <!--Juros-->
+                <div class="col-auto">
+                    <label class="form-label">Porcentagem de juros ao mês</label>
+                    <input type="number" id="juros" name="juros" class="form-control" step="0.01" placeholder="1,19" required>
+                </div>
+                <!--Prestações-->
+                <div class="col-auto">
+                    <label class="form-label">Prestações</label>
+                    <input type="number" id="prestações" name="prestações" class="form-control" required>
+                </div>
             </div>
-            <!--Botão-->
+            <!--Inserir-->
             <div class="text-center">
-                <button type="button" class="btn btn-success" name="calcular" id="calcular">Botão</button>
+                <button type="button" class="btn btn-info" name="inserir" id="inserir">Inserir</button>
             </div>
         </form>
     </section>
